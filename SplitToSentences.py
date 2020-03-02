@@ -12,9 +12,9 @@ def cutOnBestSilence(bestSilence, file, targetFolder):
 
     chunks = split_on_silence (normalized_sound, min_silence_len=bestSilence, silence_thresh=-45)
 
-    print(str(len(chunks)) + " Chunks")
-    print("Exporting Chuncks....")
-    print("\n")
+    # print(str(len(chunks)) + " Chunks")
+    # print("Exporting Chuncks....")
+    # print("\n")
 
     for i, chunk in enumerate(chunks):
         normalized_chunk = chunk

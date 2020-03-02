@@ -36,16 +36,16 @@ def goAmadeus(file,targetFolder, silenceModifier):
         howManyLoops += 1
 
     allSilence = activeHolder
-    print("All silence: " + str(allSilence) + " ms")
+    # print("All silence: " + str(allSilence) + " ms")
 
     bestSingleSilence = allSilence / where
 
     add = bestSingleSilence * silenceModifier/100
     bestSingleSilence = bestSingleSilence+add
 
-    print("Best Silence: " + str(round(bestSingleSilence)) + " ms")
+    # print("Best Silence: " + str(round(bestSingleSilence)) + " ms")
 
-    print("Started Chunking..")
+    # print("Started Chunking..")
 
     cutOnBestSilence(round(bestSingleSilence), file, targetFolder)
 
